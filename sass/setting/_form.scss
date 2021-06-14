@@ -1,0 +1,48 @@
+.form{
+
+    form{
+
+        input{
+            display: block;
+            background: #fff;
+            padding: 5px 10px;
+            margin: 10px 0;
+            border: 1px solid #999;
+        }
+
+        textarea{
+            display: block;
+            background: #fff;
+            padding: 5px 10px;
+            border: 1px solid #999;
+            margin: 10px 0;
+            width: 80%;
+
+            @include mq("sp"){
+                width: 100%;
+            }
+        }
+
+        button{
+            display: inline-block;
+            text-align: center;
+            border: 1px solid #999;
+            padding: 15px 20px;
+            background: #333;
+            color: #fff;
+            margin: 10px 0;
+            font-size: rem(14);
+            transition: all .3s;
+
+            @include mq("sp"){
+                padding: 5px 10px;
+                font-size: rem(12);
+            }
+            
+            &:hover{
+                background: #fff;
+                color: #333;
+            }
+        }
+    }
+}

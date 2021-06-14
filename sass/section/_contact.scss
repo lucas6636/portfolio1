@@ -1,0 +1,46 @@
+.contact{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    scroll-snap-align: start;
+
+    @include mq("sp"){
+        margin-top: 200px;
+        height: 140vh;
+    }
+
+    &__title{
+        text-align: center;
+        h2{
+            font-size: rem(50);
+            font-weight: bold;
+            transition: all .3s;
+
+            @include mq("sp"){
+                font-size: rem(35);
+            }
+        }
+    }
+
+    &__text{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transition: all .3s;
+
+        @include mq("sp"){
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        p{
+            font-size: rem(13);
+            transition: all .3s;
+
+            @include mq("sp"){
+                font-size: rem(12);
+            }
+        }
+    }
+    
+
+}
