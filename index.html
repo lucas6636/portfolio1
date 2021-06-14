@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Echo Chamber</title>
+    <link rel="icon" href="./img/icon.svg">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <div class="loader-wrap">
+        <div class="loader">Loading...</div>
+    </div><!-- /loader-wrap -->
+    <div id="particles-js"></div><!-- /particles-js -->
+
+    <div id="wrapper">
+
+        <header class="header">
+            <div class="header__contents">
+                <div class="header__nav">
+                    <ul>
+                        <li><a href="#1">WORKS</a></li>
+                        <li><a href="#2">ABOUT</a></li>
+                        <li><a href="#3">SKILL</a></li>
+                        <li><a href="#4">CONTACT</a></li>
+                    </ul>
+                </div><!-- /header__nav -->
+            </div><!-- /header__contents -->
+        </header><!-- /header -->
+
+        <main class="main">
+            <div class="container">
+
+                <div class="section">
+                    <div class="hero">
+                        <div class="hero__contents">
+                            <div class="hero__title">
+                                <div class="hero__name">
+                                    <h1>Echo Chamber</h1>
+                                </div><!-- /hero__name -->
+                                <div class="hero__text">
+                                    <p>Web designer / Port Folio / Profile</p>
+                                    <div class="border"></div><!-- /border -->
+                                </div><!-- /hero__text -->
+                            </div><!-- /hero__title -->
+                        </div><!-- /hero__contents -->
+                    </div><!-- /hero -->
+                </div><!-- /section -->
+
+                <div class="section">
+                    <div class="port" id="1">
+                        <div class="port__contents">
+                            <ul>
+                                <li class="section-title title">
+                                    <h2>WORKS</h2>
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <h2>コーポレートサイト(架空サイト)</h2>
+                                        <a href="#" class="js-modal-open" data-target="modal03">Read More</a>
+                                    </div><!-- /content -->
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <h2>ファッションECサイト(架空サイト)</h2>
+                                        <a href="#" class="js-modal-open" data-target="modal02">Read More</a>
+                                    </div><!-- /content -->
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <h2>旅館サイト(架空サイト)</h2>
+                                        <a href="#" class="js-modal-open" data-target="modal01">Read More</a>
+                                    </div><!-- /content -->
+                                </li>
+                            </ul>
+                            <div id="modal01" class="modal js-modal">
+                                <div class="modal-bg js-modal-close">
+                                </div>
+                                <div class="modal-content">
+                                    <figure><img src="./img/work3.jpg" alt=""></figure>
+                                    <h2>旅館サイト(架空サイト)</h2>
+                                    <div class="comment">
+                                        <h3>コンセプト・ターゲット</h3>
+                                        <p>和風の旅館webサイトです。日々様々なことで疲れて癒しと落ち着きが欲しい社会人に向けたサイトをコンセプトにしております。</p>
+                                    </div><!-- /comment -->
+                                    <div class="target">
+                                        <h3>コメント</h3>
+                                        <p>「和」を意識してサイト全体ほぼ文章は縦書きおります。</p>
+                                        <p>また文章をCSSで罫線を装飾することによってより和風かつ読みやすくしました。</p>
+                                        <p>余白、字間、所々にふんわりとしたアニメーションを入れることによってをゆとりを持たせることによって落ち着いた雰囲気にすることができました。</p>
+                                        <p>使用している技術、プラグインはjqueryではスライダーは『slick』、アニメーションは『Animon』となっています。</p>
+                                    </div><!-- /target -->
+                                    <div class="menu">
+                                        <a href="" class="link">View More</a><!-- /link -->
+                                        <a href="#" class="js-modal-close">Close</a>
+                                    </div><!-- /menu -->
+                                </div>
+                            </div>
+
+                            <div id="modal02" class="modal js-modal">
+                                <div class="modal-bg js-modal-close">
+                                </div>
+                                <div class="modal-content">
+                                    <figure><img src="./img/work2.jpg" alt=""></figure>
+                                    <h2>ファッションECサイト(架空サイト)</h2>
+                                    <div class="comment">
+                                        <h3>コンセプト・ターゲット</h3>
+                                        <p>シンプルで画面の大小に関係なく読みやすく、見やすいシンプルでモダンなECファッションサイトです。ターゲットユーザーは20~30歳で文章は少なめにし、画像でユーザーを『読ませる』といったものが主にこのサイトのコンセプトです。
+                                        </p>
+                                    </div><!-- /comment -->
+                                    <div class="target">
+                                        <h3>コメント</h3>
+                                        <p>サイドエリアにカテゴリーを設け、探したいときにパッと探せるように設置しました。またPC版限定ですがホバー時にサブカテゴリーが出るようになっております。
+                                        </p>
+                                        <p>『NEWS』部分はニュースピッカーを設置することによってコンパクトに収めることができ、アニメーションもありよりモダンな雰囲気を出せるようにしました。
+                                        </p>
+                                        <p>(SP版ではニュースピッカーは解除され通常通りの縦並びになります。)</p>
+                                        <p>使用している技術、プラグインはjqueryではスライダーは『slick』、ニュースピッカーは『bxslider』となっています。</p>
+                                    </div><!-- /target -->
+                                    <div class="menu">
+                                        <a href="" class="link">View More</a><!-- /link -->
+                                        <a href="#" class="js-modal-close">Close</a>
+                                    </div><!-- /menu -->
+                                </div>
+                            </div>
+
+                            <div id="modal03" class="modal js-modal">
+                                <div class="modal-bg js-modal-close">
+                                </div>
+                                <div class="modal-content">
+                                    <figure><img src="./img/work1.jpg" alt=""></figure>
+                                    <h2>コーポレートサイト(架空サイト)</h2>
+                                    <div class="comment">
+                                        <h3>コンセプト・ターゲット</h3>
+                                        <p>web制作・開発サービスを目的とした架空の会社のwebサイトです。モダンな技術が取引先として検討中、就職活動中で会社の情報が欲しいという人をターゲットにしています。イメージとしてシンプルかつ知的でスタイリッシュに見せるためアクセントカラーとして水色にしております。
+                                        </p>
+                                    </div><!-- /comment -->
+                                    <div class="target">
+                                        <h3>コメント</h3>
+                                        <p>静的サイトからWordPressに組み込んで制作しました。</p>
+                                        <p>特徴はフォントのジャンプ率を高くし躍動感があり大胆で活発な印象を与えています。所々にブロークングリッドレイアウト（背景）であえて不規則性を与えることによってユーザーの視線を引き付け、興味を持ってもらいやすくしております。
+                                        </p>
+                                        <p>使用している技術、プラグインはjqueryではドロワーメニューは『drawer』、プラグインは「CONTACT」のメールフォーム部分に『Contact
+                                            form7』、Wordpress化にする為に使ったローカル環境は『Local』を使用して構築しました。</p>
+                                    </div><!-- /target -->
+                                    <div class="menu">
+                                        <a href="" class="link">View More</a><!-- /link -->
+                                        <a href="#" class="js-modal-close">Close</a>
+                                    </div><!-- /menu -->
+                                </div>
+                            </div>
+
+                        </div><!-- /port__contents -->
+                    </div><!-- /port -->
+                </div><!-- /section -->
+
+                <div class="section">
+                    <div class="about" id="2">
+                        <div class="about__contents inner">
+                            <div class="about__info">
+                                <div class="section-title">
+                                    <h2>ABOUT</h2>
+                                </div><!-- /about__title -->
+                                <div class="about__name">
+                                    <h3>杉原 琢朗</h3>
+                                    <span>Takurou Sugihara</span>
+                                </div><!-- /about__name -->
+                                <div class="about__text">
+                                    <p>Webデザイナーを目指している、『Takurou Sugihara』と申します。</p>
+                                    <p>ここまで至るまで全て独学でやってきたため、少しズレている部分もありますが</p>
+                                    <p>他の人からフィードバッグをもらいながら今日までやってこられました。</p>
+                                </div><!-- /about__text -->
+                            </div><!-- /about__info -->
+                            <div class="about__profile">
+                                <h3>【経歴】</h3>
+                                <div class="about__item">
+                                    <time>H27.03</time>
+                                    <p>工学部 情報工学部 卒業</p>
+                                </div><!-- /about__item -->
+                                <div class="about__item">
+                                    <time>H27.04 ~ H28.05</time>
+                                    <p> 普段体験できないことをやってきた(具体的には)稲作、サーバー構築、日帰り温泉巡り旅等</p>
+                                </div><!-- /about__item -->
+                                <div class="about__item">
+                                    <time>H28.06 ~ R02.03</time>
+                                    <p>介護職に従事する</p>
+                                </div><!-- /about__item -->
+                                <div class="about__item">
+                                    <time>R02.04 ~ R03.03</time>
+                                    <p>地元コワーキングスペースのスタッフにてボランティアを務める</p>
+                                </div><!-- /about__item -->
+                            </div><!-- /about__profile -->
+                        </div><!-- /about__contents -->
+                    </div><!-- /about -->
+                </div><!-- /section -->
+
+                <div class="section">
+                    <div class="skill" id="3">
+                        <div class="skill__contents inner">
+                            <div class="section-title">
+                                <h2>SKILL</h2>
+                            </div><!-- /skill__title -->
+                            <div class="skill__items">
+                                <div class="skill__item">
+                                    <img src="./img/html.png" alt="">
+                                    <p>0からのコーティングが可能です。現在コーティング効率を早くする為に『pug』勉強中です。</p>
+                                </div><!-- /skill__item -->
+                                <div class="skill__item">
+                                    <img src="./img/css.png" alt="">
+                                    <p>sassで記述可能です。レスポンシブも可能でございます。Lib sassからDart sassへ環境変更中です。</p>
+                                </div><!-- /skill__item -->
+                                <div class="skill__item">
+                                    <img src="./img/javascript.png" alt="">
+                                    <p>jQueryなど、部分的に動かすような基本的なコードは書くことができます。</p>
+                                </div><!-- /skill__item -->
+                                <div class="skill__item">
+                                    <img src="./img/Wordpress.png" alt="">
+                                    <p>静的サイトに組み込むことが可能です。現在カスタムフィールド、カスタムタクソノミー勉強中です。</p>
+                                </div><!-- /skill__item -->
+                                <div class="skill__item">
+                                    <img src="./img/photoshop.png" alt="">
+                                    <p>基本的な機能は問題なく使用できます。</p>
+                                </div><!-- /skill__item -->
+                                <div class="skill__item">
+                                    <img src="./img/illust.png" alt="">
+                                    <p>必要最低限のことは使用可能です。今現在苦戦中で勉強中です</p>
+                                </div><!-- /skill__item -->
+                                <div class="skill__item">
+                                    <img src="./img/xd.png" alt="">
+                                    <p>photoshop同様基本的な機能は問題なく使用できます。</p>
+                                </div><!-- /skill__item -->
+                                <div class="skill__item">
+                                    <img src="./img/gulp.png" alt="">
+                                    <p>環境構築、sassコンパイル、画像圧縮等可能です。</p>
+                                </div><!-- /skill__item -->
+                            </div><!-- /skill__items -->
+                        </div><!-- /skill__contents -->
+                    </div><!-- /skill -->
+                </div><!-- /section -->
+
+                <div class="section">
+                    <div class="contact" id="4">
+                        <div class="contact__contents inner">
+                            <div class="section-title">
+                                <h2>CONTACT</h2>
+                            </div><!-- /contact__title -->
+                            <div class="contact__text">
+                                <p>ここまで御覧頂きありがとうございました。</p>
+                                <p>ご質問、ご要望があれば以下のフォームからご連絡をお願いします。</p>
+                            </div><!-- /contact__text -->
+
+                            <div class="form">
+                                <form
+                                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScgdAfd5QWvBi2ZnMz6qP77wGHNs1qx1Xtu8pXuXzX4sln9Bg/formResponse"
+                                    method="POST">
+                                    <input type="text" name="entry.2005620554" placeholder="Name">
+                                    <input type="email" name="entry.1045781291" placeholder="Mail">
+                                    <input type="text" name="entry.714863438" placeholder="Subject">
+                                    <textarea name="entry.839337160" id="" cols="80" rows="5"
+                                        placeholder="message"></textarea><!-- / -->
+                                    <button type="submit" name="submit" class="btn">Submit</button>
+                                </form>
+                            </div><!-- /form -->
+
+                            <footer class="footer">
+                                <div class="footer__small">
+                                    <small>Copyright Takurou Sugihara All Right Reserved.</small>
+                                </div><!-- /footer__small -->
+                            </footer><!-- /footer -->
+                        </div><!-- /contact -->
+                    </div><!-- /section -->
+
+                </div><!-- /container -->
+        </main><!-- /main -->
+    </div><!-- /wrapper -->
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/particle.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

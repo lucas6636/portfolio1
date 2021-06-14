@@ -1,0 +1,104 @@
+.port{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+
+    ul{
+        position: absolute;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+
+        .title{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            writing-mode: vertical-lr;
+        }
+
+        li{
+            position: relative;
+            flex-grow: 1;
+            width: 15%;
+            height: 100%;
+            overflow: hidden;
+            transition: all .5s;
+
+            &:hover .content{
+                bottom: 0;
+                transition: all .7s;
+                transition-delay: .2s;
+            }
+
+            .content{
+                padding: 40px 50px;
+                position: absolute;
+                bottom: -300%;
+                left: 0;
+                width: 100%;
+                background: rgba(0,0,0,.8);
+                box-sizing: border-box;
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: rem(14);
+                font-weight: bold;
+
+                @include mq("sp"){
+                    font-size: rem(10);
+                    padding: 10px 10px;
+                }
+            }
+
+            &:nth-child(1){
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            &:nth-child(2){
+                background-image: url('../img/work1.jpg');
+                background-size: cover;
+                background-attachment: fixed;
+                box-shadow: 10px 0px 15px -5px #777777;
+            }
+
+            &:nth-child(3){
+                background-image: url('../img/work2.jpg');
+                background-size: cover;
+                background-attachment: fixed;
+                box-shadow: 10px 0px 15px -5px #777777;
+            }
+
+            &:nth-child(4){
+                background-image: url('../img/work3.jpg');
+                background-size: cover;
+                background-attachment: fixed;
+                box-shadow: 10px 0px 15px -5px #777777;
+            }
+
+            &:hover{
+                width: 300%;
+
+                @include mq("sp"){
+                    width: 120%;
+                }
+            }
+
+            &:first-child{
+                width: 60%;
+                transition: all .3s;
+
+                @include mq("sp"){
+                    width: 30%;
+                }
+            }
+        }
+    }
+}

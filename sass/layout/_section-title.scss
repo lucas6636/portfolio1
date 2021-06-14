@@ -1,0 +1,12 @@
+.section-title{
+    
+    h2{
+        font-size: rem(50);
+        font-weight: bold;
+        transition: all .3s;
+
+        @include mq("sp"){
+            font-size: rem(35);
+        }
+    }
+}

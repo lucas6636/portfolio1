@@ -1,0 +1,40 @@
+.header{
+
+    position: fixed;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    right: 3%;
+    transition: all .3s;
+
+    @include mq("sp"){
+        top: 65%;
+    }
+
+    &__nav{
+        ul{
+            li{
+                margin-bottom: 40px;
+                transition: all .3s;
+
+                @include mq("sp"){
+                    margin-bottom: 50px;
+                }
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                a{
+                    writing-mode: vertical-lr;
+                    font-size: rem(12);
+                    font-weight: bold;
+                    transition: all .3s;
+
+                    @include mq("sp"){
+                        font-size: rem(11);
+                    }
+                }
+            }
+        }
+    }
+}
