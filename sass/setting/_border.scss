@@ -4,4 +4,8 @@
     width: 25%;
     max-width: 100%;
     margin-left: 10px;
+
+    @include mq("sp"){
+        display: none;
+    }
 }

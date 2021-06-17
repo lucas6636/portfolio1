@@ -14,18 +14,16 @@
 
 <body>
 
-
-    <!-- サイト訪問時のローディング画面 -->
+    <!-- ローディング画面 -->
     <div class="loader-wrap">
         <div class="loader">Loading...</div>
-    </div><!-- /loader-wrap -->
-
-    <!-- サイトのパーティクル背景javascript -->
-    <div id="particles-js"></div><!-- /particles-js -->
+    </div>
+    <!-- サイト背景 パーティクル-->
+    <div id="particles-js"></div>
 
     <div id="wrapper">
 
-        <!-- ヘッダー -->
+        <!-- header -->
         <header class="header">
             <div class="header__contents">
                 <div class="header__nav">
@@ -41,10 +39,10 @@
 
         <!-- メインコンテンツ -->
         <main class="main">
-            <!-- コンテナ　スクロールスナップY -->
+            <!-- スクロールスナップY軸 -->
             <div class="container">
+                <!-- hero -->
                 <div class="section">
-                    <!-- ヒーローイメージ -->
                     <div class="hero">
                         <div class="hero__contents">
                             <div class="hero__title">
@@ -60,124 +58,139 @@
                     </div><!-- /hero -->
                 </div><!-- /section -->
 
+                <!-- work -->
                 <div class="section">
-                    <!-- ワーク -->
-                    <div class="port" id="1">
-                        <div class="port__contents">
-                            <!-- ワーク　メニューエリア -->
+                    <div class="work" id="1">
+                        <div class="work__contents inner">
+                            <div class="work__title">
+                                <h2>WORKS</h2>
+                            </div><!-- /work__title -->
                             <ul>
-                                <li class="section-title title">
-                                    <h2>WORKS</h2>
+                                <li>
+                                    <div class="content">
+                                        <h2>コーポレートサイト</h2>
+                                        <a href="#" class="js-modal-open" data-target="modal04">Read More</a>
+                                    </div><!-- /content -->
                                 </li>
                                 <li>
                                     <div class="content">
-                                        <h2>コーポレートサイト(架空サイト)</h2>
+                                        <h2>ECサイト</h2>
                                         <a href="#" class="js-modal-open" data-target="modal03">Read More</a>
                                     </div><!-- /content -->
                                 </li>
                                 <li>
                                     <div class="content">
-                                        <h2>ファッションECサイト(架空サイト)</h2>
+                                        <h2>旅館サイト</h2>
                                         <a href="#" class="js-modal-open" data-target="modal02">Read More</a>
                                     </div><!-- /content -->
                                 </li>
                                 <li>
                                     <div class="content">
-                                        <h2>旅館サイト(架空サイト)</h2>
+                                        <h2>ポートフォリオ</h2>
                                         <a href="#" class="js-modal-open" data-target="modal01">Read More</a>
                                     </div><!-- /content -->
                                 </li>
                             </ul>
+                        </div><!-- /work__contents -->
+                    </div><!-- /work -->
 
-                            <!-- ワーク　モーダルウインドウ1 -->
-                            <div id="modal01" class="modal js-modal">
-                                <div class="modal-bg js-modal-close"></div>
-                                <div class="modal-content">
-                                    <figure><img src="./img/work3.jpg" alt=""></figure>
-                                    <h2>旅館サイト(架空サイト)</h2>
-                                    <div class="comment">
-                                        <h3>コンセプト・ターゲット</h3>
-                                        <p>和風の旅館webサイトです。日々様々なことで疲れて癒しと落ち着きが欲しい社会人に向けたサイトをコンセプトにしております。</p>
-                                    </div><!-- /comment -->
-                                    <div class="target">
-                                        <h3>コメント</h3>
-                                        <p>「和」を意識してサイト全体ほぼ文章は縦書きおります。</p>
-                                        <p>また文章をCSSで罫線を装飾することによってより和風かつ読みやすくしました。</p>
-                                        <p>余白、字間、所々にふんわりとしたアニメーションを入れることによってをゆとりを持たせることによって落ち着いた雰囲気にすることができました。</p>
-                                        <p>使用している技術、プラグインはjqueryではスライダーは『slick』、アニメーションは『Animon』となっています。</p>
-                                    </div><!-- /target -->
-                                    <div class="menu">
-                                        <a href="" class="link">View More</a><!-- /link -->
-                                        <a href="#" class="js-modal-close">Close</a>
-                                    </div><!-- /menu -->
-                                </div>
-                            </div>
+                    <div id="modal01" class="modal js-modal">
+                        <div class="modal-bg js-modal-close">
+                        </div>
+                        <div class="modal-content">
+                            <figure><img src="./img/work4.jpg" alt=""></figure>
+                            <h2>ポートフォリオサイト</h2>
+                            <div class="comment">
+                                <h3>コンセプト・ターゲット</h3>
+                                <p>如何にして必要最小限かつ1ページに収めることができるか。ポートフォリオは作品であると同時に見る人の時間をあまり奪わないようにデザイン性を損なわずに効率の良いサイトにしました。</p>
+                            </div><!-- /comment -->
+                            <div class="comment">
+                                <h3>コメント</h3>
+                                <p>各制作作品載せるためのポートフォリオサイトですが冗長に書くと見る人の時間を無駄になるため必要最小限かつ、各セクションごとスクロールスナップのY軸に指定することによってセクションごと移動が可能になっております。「WORKS」の作品集はPCはホバー、SPはタッチすると広がるようになっております。「CONTACT」のメールフォームは見た目は普通ですが、Googleフォームと紐づけ処理されるようになっております。
+                                </p>
+                            </div><!-- /comment -->
+                            <div class="menu">
+                                <a href="" class="link">View More</a><!-- /link -->
+                                <a href="#" class="js-modal-close">Close</a>
+                            </div><!-- /menu -->
+                        </div>
+                    </div>
 
-                            <!-- ワーク　モーダルウインドウ2 -->
-                            <div id="modal02" class="modal js-modal">
-                                <div class="modal-bg js-modal-close">
-                                </div>
-                                <div class="modal-content">
-                                    <figure><img src="./img/work2.jpg" alt=""></figure>
-                                    <h2>ファッションECサイト(架空サイト)</h2>
-                                    <div class="comment">
-                                        <h3>コンセプト・ターゲット</h3>
-                                        <p>シンプルで画面の大小に関係なく読みやすく、見やすいシンプルでモダンなECファッションサイトです。ターゲットユーザーは20~30歳で文章は少なめにし、画像でユーザーを『読ませる』といったものが主にこのサイトのコンセプトです。
-                                        </p>
-                                    </div><!-- /comment -->
-                                    <div class="target">
-                                        <h3>コメント</h3>
-                                        <p>サイドエリアにカテゴリーを設け、探したいときにパッと探せるように設置しました。またPC版限定ですがホバー時にサブカテゴリーが出るようになっております。
-                                        </p>
-                                        <p>『NEWS』部分はニュースピッカーを設置することによってコンパクトに収めることができ、アニメーションもありよりモダンな雰囲気を出せるようにしました。
-                                        </p>
-                                        <p>(SP版ではニュースピッカーは解除され通常通りの縦並びになります。)</p>
-                                        <p>使用している技術、プラグインはjqueryではスライダーは『slick』、ニュースピッカーは『bxslider』となっています。</p>
-                                    </div><!-- /target -->
-                                    <div class="menu">
-                                        <a href="" class="link">View More</a><!-- /link -->
-                                        <a href="#" class="js-modal-close">Close</a>
-                                    </div><!-- /menu -->
-                                </div>
-                            </div>
+                    <div id="modal02" class="modal js-modal">
+                        <div class="modal-bg js-modal-close">
+                        </div>
+                        <div class="modal-content">
+                            <figure><img src="./img/work3.jpg" alt=""></figure>
+                            <h2>旅館サイト(架空サイト)</h2>
+                            <div class="comment">
+                                <h3>コンセプト・ターゲット</h3>
+                                <p>和風の旅館webサイトです。日々様々なことで疲れて癒しと落ち着きが欲しい30~40歳に向けたサイトをコンセプトにしております。</p>
+                            </div><!-- /comment -->
+                            <div class="comment">
+                                <h3>コメント</h3>
+                                <p>「和」を意識してサイト全体ほぼ文章は縦書きおります。余白、字間をゆとりを持たせることによって落ち着いた雰囲気にすることができました。各要素ごとにふんわりとしたアニメーションを設定することよって穏やかな雰囲気とストーリー性を演出するようにしています。
+                                </p>
+                            </div><!-- /comment -->
+                            <div class="menu">
+                                <a href="" class="link">View More</a><!-- /link -->
+                                <a href="#" class="js-modal-close">Close</a>
+                            </div><!-- /menu -->
+                        </div>
+                    </div>
 
-                            <!-- ワーク　モーダルウインドウ3 -->
-                            <div id="modal03" class="modal js-modal">
-                                <div class="modal-bg js-modal-close">
-                                </div>
-                                <div class="modal-content">
-                                    <figure><img src="./img/work1.jpg" alt=""></figure>
-                                    <h2>コーポレートサイト(架空サイト)</h2>
-                                    <div class="comment">
-                                        <h3>コンセプト・ターゲット</h3>
-                                        <p>web制作・開発サービスを目的とした架空の会社のwebサイトです。モダンな技術が取引先として検討中、就職活動中で会社の情報が欲しいという人をターゲットにしています。イメージとしてシンプルかつ知的でスタイリッシュに見せるためアクセントカラーとして水色にしております。
-                                        </p>
-                                    </div><!-- /comment -->
-                                    <div class="target">
-                                        <h3>コメント</h3>
-                                        <p>静的サイトからWordPressに組み込んで制作しました。</p>
-                                        <p>特徴はフォントのジャンプ率を高くし躍動感があり大胆で活発な印象を与えています。所々にブロークングリッドレイアウト（背景）であえて不規則性を与えることによってユーザーの視線を引き付け、興味を持ってもらいやすくしております。
-                                        </p>
-                                        <p>使用している技術、プラグインはjqueryではドロワーメニューは『drawer』、プラグインは「CONTACT」のメールフォーム部分に『Contact
-                                            form7』、Wordpress化にする為に使ったローカル環境は『Local』を使用して構築しました。</p>
-                                    </div><!-- /target -->
-                                    <div class="menu">
-                                        <a href="" class="link">View More</a><!-- /link -->
-                                        <a href="#" class="js-modal-close">Close</a>
-                                    </div><!-- /menu -->
-                                </div>
-                            </div>
+                    <div id="modal03" class="modal js-modal">
+                        <div class="modal-bg js-modal-close">
+                        </div>
+                        <div class="modal-content">
+                            <figure><img src="./img/work2.jpg" alt=""></figure>
+                            <h2>ファッションECサイト(架空サイト)</h2>
+                            <div class="comment">
+                                <h3>コンセプト・ターゲット</h3>
+                                <p>シンプルで画面の大小に関係なく読みやすく、見やすいシンプルでモダンなECファッションサイトです。ターゲットユーザーは流行に敏感な20~30歳で文章は少なめにし、ユーザーを文字の情報過多で考えすぎで離脱することがありますので画像で「読ませる」にしました。
+                                </p>
+                            </div><!-- /comment -->
+                            <div class="comment">
+                                <h3>コメント</h3>
+                                <p>サイドエリアにカテゴリーを設け、探したいときにパッと探せるように設置しました。マウスホバー時にサブカテゴリーが出るようになっております。（PC版限定でSP版にはございません）『NEWS』部分はニュースピッカーを設置することによってコンパクトに収めることができ、アニメーションもありよりモダンな雰囲気を出せるようにしました。（SP版では変化します）
+                                </p>
+                            </div><!-- /comment -->
+                            <div class="menu">
+                                <a href="" class="link">View More</a><!-- /link -->
+                                <a href="#" class="js-modal-close">Close</a>
+                            </div><!-- /menu -->
+                        </div>
+                    </div>
 
-                        </div><!-- /port__contents -->
-                    </div><!-- /port -->
+                    <div id="modal04" class="modal js-modal">
+                        <div class="modal-bg js-modal-close">
+                        </div>
+                        <div class="modal-content">
+                            <figure><img src="./img/work1.jpg" alt=""></figure>
+                            <h2>コーポレートサイト(架空サイト)</h2>
+                            <div class="comment">
+                                <h3>コンセプト・ターゲット</h3>
+                                <p>web制作・開発サービスを目的とした架空の会社のwebサイトです。モダンな技術が取引先として検討中、就職活動中で会社の情報が欲しいという人をターゲットにしています。イメージとしてシンプルかつ知的でスタイリッシュに見せるためアクセントカラーとして水色にしております。
+                                </p>
+                            </div><!-- /comment -->
+                            <div class="comment">
+                                <h3>コメント</h3>
+                                <p>静的サイトからWordPressに組み込んで制作しました。特徴はフォントのジャンプ率を高くし躍動感があり大胆で活発な印象を与えています。所々にブロークングリッドレイアウト（背景）であえて不規則性を与えることによってユーザーの視線を引き付け、興味を持ってもらいやすくしております。『CONTACT』ページのメールフォームは『Contact
+                                    From7』というプラグインを使用しました。</p>
+                            </div><!-- /comment -->
+                            <div class="menu">
+                                <a href="" class="link">View More</a><!-- /link -->
+                                <a href="#" class="js-modal-close">Close</a>
+                            </div><!-- /menu -->
+                        </div>
+                    </div>
                 </div><!-- /section -->
 
+                <!-- about -->
                 <div class="section">
-                    <!-- 自己紹介 -->
                     <div class="about" id="2">
                         <div class="about__contents inner">
                             <div class="about__info">
-                                <div class="section-title">
+                                <div class="about__title">
                                     <h2>ABOUT</h2>
                                 </div><!-- /about__title -->
                                 <div class="about__name">
@@ -213,11 +226,11 @@
                     </div><!-- /about -->
                 </div><!-- /section -->
 
+                <!-- skill -->
                 <div class="section">
-                    <!-- スキル -->
                     <div class="skill" id="3">
                         <div class="skill__contents inner">
-                            <div class="section-title">
+                            <div class="skill__title">
                                 <h2>SKILL</h2>
                             </div><!-- /skill__title -->
                             <div class="skill__items">
@@ -243,7 +256,7 @@
                                 </div><!-- /skill__item -->
                                 <div class="skill__item">
                                     <img src="./img/illust.png" alt="">
-                                    <p>必要最低限のことは使用可能です。今現在苦戦中で勉強中です</p>
+                                    <p>必要最低限のことは使用可能です。今一番勉強中です</p>
                                 </div><!-- /skill__item -->
                                 <div class="skill__item">
                                     <img src="./img/xd.png" alt="">
@@ -258,11 +271,11 @@
                     </div><!-- /skill -->
                 </div><!-- /section -->
 
+                <!-- contact -->
                 <div class="section">
-                    <!-- お問い合わせ -->
                     <div class="contact" id="4">
                         <div class="contact__contents inner">
-                            <div class="section-title">
+                            <div class="contact__title">
                                 <h2>CONTACT</h2>
                             </div><!-- /contact__title -->
                             <div class="contact__text">
@@ -270,7 +283,7 @@
                                 <p>ご質問、ご要望があれば以下のフォームからご連絡をお願いします。</p>
                             </div><!-- /contact__text -->
 
-                            <!-- メールフォーム　 Googleフォームと紐づけ-->
+                            <!-- メールフォーム Googleフォームと紐づけ -->
                             <div class="form">
                                 <form
                                     action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScgdAfd5QWvBi2ZnMz6qP77wGHNs1qx1Xtu8pXuXzX4sln9Bg/formResponse"
@@ -284,7 +297,7 @@
                                 </form>
                             </div><!-- /form -->
 
-                            <!-- フッター -->
+                            <!-- footer -->
                             <footer class="footer">
                                 <div class="footer__small">
                                     <small>Copyright Takurou Sugihara All Right Reserved.</small>
