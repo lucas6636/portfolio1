@@ -2,37 +2,29 @@
 
     position: fixed;
     z-index: 1;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    right: 3%;
+    top: 5%;
+    right: 5%;
     transition: all .3s;
 
     @include mq("sp"){
-        top: 65%;
+        display: none;
     }
 
     &__nav{
         ul{
+            display: flex;
+            justify-content: center;
             li{
-                margin-bottom: 40px;
                 transition: all .3s;
-
-                @include mq("sp"){
-                    margin-bottom: 50px;
-                }
+                margin-right: 60px;
 
                 &:last-child{
-                    margin-bottom: 0;
+                    margin-right: 0;
                 }
                 a{
-                    writing-mode: vertical-lr;
                     font-size: rem(12);
                     font-weight: bold;
                     transition: all .3s;
-
-                    @include mq("sp"){
-                        font-size: rem(11);
-                    }
                 }
             }
         }
