@@ -16,10 +16,6 @@ $('.js-modal-close').on('click', function(){
   return false;
 });
 
-$(function(){
-  $("#typing").t()
-});
-
 $(window).on('load',function(){
   $(".loader-wrap").delay(1500).fadeOut('slow');
   $(".loader-wrap").delay(1200).fadeOut('slow');

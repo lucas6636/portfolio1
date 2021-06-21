@@ -1,13 +1,13 @@
 .header{
-
     position: fixed;
     z-index: 1;
+    transform: translate(-50%,-50%);
     top: 5%;
-    right: 5%;
+    left: 50%;
     transition: all .3s;
 
     @include mq("sp"){
-        display: none;
+
     }
 
     &__nav{
@@ -17,6 +17,10 @@
             li{
                 transition: all .3s;
                 margin-right: 60px;
+
+                @include mq("sp"){
+
+                }
 
                 &:last-child{
                     margin-right: 0;

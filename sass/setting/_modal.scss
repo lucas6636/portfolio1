@@ -10,11 +10,19 @@
   display: inline-block;
   font-size: rem(12);
   padding: 15px 20px;
-  background: #111;
+  background: #333;
+  border: 1px solid #333;
+  color: #fff;
+
+  &:hover{
+    background: #fff;
+    color: #333;
+    border: 1px solid #333;
+  }
 
   @include mq("sp"){
     padding: 10px 15px;
-    font-size: rem(10);
+    font-size: rem(16);
   }
 }
 
@@ -33,7 +41,7 @@
   overflow: scroll;
   height: 85%;
   width: 85%;
-  background: white;
+  background: #fff;
   padding: 80px;
 
   @include mq("sp"){
