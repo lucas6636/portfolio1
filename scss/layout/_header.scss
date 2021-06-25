@@ -7,7 +7,9 @@
     transition: all .3s;
 
     @include mq("sp"){
-
+        writing-mode: vertical-lr;
+        top: 50%;
+        left: 93%;
     }
 
     &__nav{
@@ -19,7 +21,8 @@
                 margin-right: 60px;
 
                 @include mq("sp"){
-
+                    margin-bottom: 50px;
+                    margin-right: 0;
                 }
 
                 &:last-child{

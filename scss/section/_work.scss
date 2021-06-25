@@ -5,7 +5,7 @@
     scroll-snap-align: start;
 
     @include mq("tab"){
-      height: 400vh;
+      height: 350vh;
     }
 
     &__title{

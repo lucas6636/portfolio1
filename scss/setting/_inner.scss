@@ -1,0 +1,9 @@
+.inner{
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 70px;
+
+    @include mq("sp"){
+        padding: 70px 70px 70px 50px;
+    }
+}

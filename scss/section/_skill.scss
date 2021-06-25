@@ -6,11 +6,11 @@
     transition: all .3s;
 
     @include mq("tab"){
-        height:  150vh;
+        height:  140vh;
     }
 
     @include mq("sp"){
-        height: 350vh;
+        height: 300vh;
     }
 
     &__title{
