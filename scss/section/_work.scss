@@ -1,14 +1,11 @@
 .work{
     position: relative;
-    width: 100%;
-    height: 100vh;
-    scroll-snap-align: start;
-
-    @include mq("tab"){
-      height: 350vh;
-    }
 
     &__title{
+
+      @include mq("tab"){
+        text-align: center;
+    }
 
       @include mq("sp"){
         text-align: center;

@@ -1,15 +1,10 @@
 .contact{
     position: relative;
-    width: 100%;
-    height: 120vh;
-    scroll-snap-align: start;
-
-    @include mq("sp"){
-        margin-top: 200px;
-        height: 130vh;
-    }
 
     &__title{
+        @include mq("tab"){
+            text-align: center;
+        }
         
         h2{
             font-size: rem(50);

@@ -2,32 +2,16 @@
     position: fixed;
     z-index: 1;
     transform: translate(-50%,-50%);
-    top: 5%;
-    left: 50%;
-    transition: all .3s;
-
-    @include mq("sp"){
-        writing-mode: vertical-lr;
-        top: 50%;
-        left: 93%;
-    }
+    writing-mode: vertical-lr;
+    top: 50%;
+    left: 96%;
 
     &__nav{
         ul{
             display: flex;
             justify-content: center;
             li{
-                transition: all .3s;
-                margin-right: 60px;
-
-                @include mq("sp"){
-                    margin-bottom: 50px;
-                    margin-right: 0;
-                }
-
-                &:last-child{
-                    margin-right: 0;
-                }
+                margin-bottom: 35px;
                 a{
                     font-size: rem(12);
                     font-weight: bold;

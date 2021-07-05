@@ -1,14 +1,12 @@
 .about{
     position: relative;
-    width: 100%;
-    height: 100vh;
-    scroll-snap-align: start;
-
-    @include mq("sp"){
-        height: 150vh;
-    }
 
     &__title{
+
+        @include mq("tab"){
+            text-align: center;
+        }
+
         h2{
             font-size: rem(50);
             font-weight: bold;
@@ -21,13 +19,23 @@
         }
     }
 
-    &__name{
+    &__infos{
         margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include mq("tab"){
+            flex-direction: column;
+        }
+    }
+
+    &__name{
         transition: all .3s;
 
-        @include mq("sp"){
-            margin-top: 30px;
+        @include mq("tab"){
+            text-align: center;
         }
+
         h3{
             font-size: rem(28);
             font-weight: bold;
@@ -50,17 +58,42 @@
         }
     }
 
+    &__img{
+        width: 50%;
+        img{
+            width: 300px;
+        }
+
+        @include mq("tab"){
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &__info{
+        width: 50%;
+
+        @include mq("tab"){
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+
     &__text{
         margin-top: 20px;
+
+        @include mq("tab"){
+            text-align: center;
+        }
         p{
             font-size: rem(13);
-            line-height: 1.5em;
+            line-height: 1.8em;
             color: #444;
             letter-spacing: .1em;
             transition: all .3s;
 
             @include mq("sp"){
-                font-size: rem(12);
+                font-size: rem(11);
             }
         }
     }
@@ -70,16 +103,7 @@
         transition: all .3s;
 
         @include mq("tab"){
-            margin-top: 20px;
-        }
-
-        h3{
-            margin-bottom: 10px;
-            transition: all .3s;
-
-            @include mq("sp"){
-                font-size: rem(14);
-            }
+            margin-top: 50px;
         }
     }
 
